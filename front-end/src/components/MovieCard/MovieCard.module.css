@@ -1,0 +1,55 @@
+.card {
+  background-color: #141414; /* fundo escuro estilo Netflix */
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 220px;
+  text-align: center; /* centraliza conteúdo dentro do card */
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* imagem centralizada */
+.card img {
+  display: block;
+  margin: 0 auto 0.8rem auto; /* centraliza e dá espaço abaixo */
+  width: 140px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+/* efeito hover tipo Netflix */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+}
+
+/* título do filme */
+.card h3 {
+  color: #e50914;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* texto secundário */
+.card p {
+  font-size: 0.9rem;
+  color: #b3b3b3;
+  margin: 0.2rem 0;
+}
+
+.card strong {
+  color: #fff;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}

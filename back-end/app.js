@@ -1,10 +1,15 @@
 import express from "express";
 import mongoose from 'mongoose';
-const app = express();
 import Movies from "./models/Movies.js"
 import movieRoutes from "./routes/movieRoutes.js";
+import cors from "cors"
 
 
+const app = express();
+
+//Configurando o cors
+
+app.use(cors())
 
 app.use(express.urlencoded({extended:false}))
 app.use(express.json())
