@@ -5,8 +5,7 @@ const MovieCard = ({ title, genre, year, producer }) => {
 
   return (
     <div className={styles.card}>
-      <image src={imagePath} alt={title} />
-      <h3>{title}</h3>
+      <img src={imagePath} alt={title} />
       <p><strong>Gênero:</strong> {genre}</p>
       <p><strong>Ano:</strong> {year}</p>
       <p><strong>Produtor:</strong> {producer}</p>
